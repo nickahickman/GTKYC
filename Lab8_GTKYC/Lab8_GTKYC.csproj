@@ -6,7 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\RegexRedux\MyLibs\MyLibs.csproj" />
     <ProjectReference Include="..\ProjectLibrary\ProjectLibrary.csproj" />
   </ItemGroup>
 

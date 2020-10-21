@@ -41,7 +41,6 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "MyLibs >= 1.0.0",
       "ProjectLibrary >= 1.0.0"
     ]
   },
@@ -73,9 +72,6 @@
           "projectReferences": {
             "C:\\Users\\HoboPrime\\Desktop\\grandCircus\\unit2\\Lab8_GTKYC\\ProjectLibrary\\ProjectLibrary.csproj": {
               "projectPath": "C:\\Users\\HoboPrime\\Desktop\\grandCircus\\unit2\\Lab8_GTKYC\\ProjectLibrary\\ProjectLibrary.csproj"
-            },
-            "C:\\Users\\HoboPrime\\Desktop\\grandCircus\\unit2\\RegexRedux\\MyLibs\\MyLibs.csproj": {
-              "projectPath": "C:\\Users\\HoboPrime\\Desktop\\grandCircus\\unit2\\RegexRedux\\MyLibs\\MyLibs.csproj"
             }
           }
         }

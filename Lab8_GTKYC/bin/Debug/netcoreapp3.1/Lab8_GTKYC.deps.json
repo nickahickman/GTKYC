@@ -8,7 +8,6 @@
     ".NETCoreApp,Version=v3.1": {
       "Lab8_GTKYC/1.0.0": {
         "dependencies": {
-          "MyLibs": "1.0.0",
           "ProjectLibrary": "1.0.0"
         },
         "runtime": {
