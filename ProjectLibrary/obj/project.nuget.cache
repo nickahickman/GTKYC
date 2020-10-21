@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "SmuzlWHxqsnA06LdZC+NIkxT3ZvNZ8F43M+24J6b0/rv8uLyrB6jjsUOx6Y0fByoh3k5SRo7UhuzBUkCvOckAA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\HoboPrime\\Desktop\\grandCircus\\unit2\\Lab8_GTKYC\\ProjectLibrary\\ProjectLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\HoboPrime\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\HoboPrime\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
