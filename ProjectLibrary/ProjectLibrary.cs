@@ -9,29 +9,39 @@ namespace ProjectLibrary
         {
             while (true)
             {
-                MyLibs.ConsoleLibrary.DrawTitle("Get to Know Your Classmates");
+                MyLibs.ConsoleLibrary.DrawTitle("Get to Know Your Classmates", "program");
 
                 PrintStudentRoster(students);
-                int targetStudent = int.Parse(MyLibs.UserInputLibrary.GetUserResponse($"Enter the ID of the student you want to know more about 0 - {students.GetLength(0) - 1}"));
+
+                string studentID = MyLibs.UserInputLibrary.GetUserResponse($"Enter the ID of the student you want to know more about 0 - {students.GetLength(0) - 1}");
+                while (!IsValidInteger(studentID))
+                {
+                    studentID = MyLibs.UserInputLibrary.GetUserResponse($"Invalid entry: Enter the ID of the student you want to know more about 0 - {students.GetLength(0) - 1}");
+                }
+                int targetStudent = int.Parse(studentID);
 
                 while (!StudentExists(students, targetStudent))
                 { 
                     targetStudent = int.Parse(MyLibs.UserInputLibrary.GetUserResponse($"Student not found. Enter the ID of the student you want to know more about 0 - {students.GetLength(0) - 1}"));
                 }
 
-                string userQuery = MyLibs.UserInputLibrary.GetUserResponse($"Do you want to know {GetStudentName(students, targetStudent)}'s favorite food or hometown?");
-                while (userQuery != "hometown" && userQuery != "favorite food")
+                string userQuery = MyLibs.UserInputLibrary.GetUserResponse($"Do you want to know {GetStudentName(students, targetStudent)}'s favorite food, hometown, or favorite animal?");
+                while (userQuery != "hometown" && userQuery != "favorite food" && userQuery != "favorite animal")
                 {
-                    userQuery = MyLibs.UserInputLibrary.GetUserResponse($"I can only tell you about {GetStudentName(students, targetStudent)}'s favorite food or hometown. Which would you like to know?");
+                    userQuery = MyLibs.UserInputLibrary.GetUserResponse($"I can only tell you about {GetStudentName(students, targetStudent)}'s favorite food, hometown, or favorite animal. Which would you like to know?");
                 }
 
                 if (userQuery == "favorite food")
                 {
-                    Console.WriteLine($"{GetStudentName(students, targetStudent)}'s favorite food is {GetStudentFood(students, targetStudent)}");
+                    Console.WriteLine($"{GetStudentName(students, targetStudent)}'s favorite food is {GetStudentFact(students, targetStudent, "favorite food")}");
+                }
+                else if (userQuery == "hometown")
+                {
+                    Console.WriteLine($"{GetStudentName(students, targetStudent)}'s hometown is {GetStudentFact(students, targetStudent, "hometown")}");
                 }
                 else
                 {
-                    Console.WriteLine($"{GetStudentName(students, targetStudent)}'s hometown is {GetStudentHometown(students, targetStudent)}");
+                    Console.WriteLine($"{GetStudentName(students, targetStudent)}'s favorite animal is {GetStudentFact(students, targetStudent, "favorite animal")}");
                 }
                 
                 if (!MyLibs.UserInputLibrary.UserWantsToContinue("Would you like information on another student?", "I didn't understand that."))
@@ -43,33 +53,49 @@ namespace ProjectLibrary
                 Console.Clear();
             }
         }
+
         public static void PrintStudentRoster(string[,] students)
         {
             int rosterSize = students.GetLength(0);
 
-            MyLibs.ConsoleLibrary.DrawTitle("Current roster");
+            MyLibs.ConsoleLibrary.DrawTitle("Current roster", "section");
 
             for (int i = 0; i < rosterSize; i++)
             {
                 Console.WriteLine($"{students[i, 0]} - Student ID: {i}");
             }
-
+            Console.WriteLine("");
         }
+
         public static string GetStudentName(string[,] students, int index)
         {
             return students[index, 0];
         }
-        public static string GetStudentFood(string[,] students, int index)
+
+        public static string GetStudentFact(string[,] students, int index, string query)
         {
-            return students[index, 1];
+            if (query == "favorite food")
+            {
+                return students[index, 1];
+            }
+            else if (query == "hometown")
+            {
+                return students[index, 2];
+            }
+            else
+            {
+                return students[index, 3];
+            }
         }
-        public static string GetStudentHometown(string[,] students, int index)
-        {
-            return students[index, 2];
-        }
+
         public static bool StudentExists(string[,] students, int studentIndex)
         {
             return studentIndex >= 0 &&  studentIndex < students.GetLength(0);
+        }
+
+        public static bool IsValidInteger(string userResponse)
+        {
+            return userResponse.All(Char.IsDigit);
         }
     }
 }

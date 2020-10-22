@@ -6,11 +6,11 @@ namespace Lab8_GTKYC
     {
         static void Main(string[] args)
         {
-            string[,] students = { { "Mozart", "Pizza", "Salzburg" },
-                                   { "Beethoven", "Hot Dogs", "Bonn" },
-                                   { "Bach", "Steak", "Eisenach" },
-                                   { "Chopin", "Offal", "Zelazowa Wola" },
-                                   { "Handel", "Cheese", "Halle" } };
+            string[,] students = { { "Mozart", "Pizza", "Salzburg", "Fox" },
+                                   { "Beethoven", "Hot Dogs", "Bonn", "Wolf" },
+                                   { "Bach", "Steak", "Eisenach", "Ostrich" },
+                                   { "Chopin", "Offal", "Zelazowa Wola", "Shark" },
+                                   { "Handel", "Cheese", "Halle", "Bear" } };
 
             ProjectLibrary.GTKYC.GetToKnowYourClassmates(students);
         }

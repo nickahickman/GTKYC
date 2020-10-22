@@ -43,15 +43,24 @@ namespace MyLibs
 
     public class ConsoleLibrary
     {
-        public static void DrawTitle(string title)
+        public static void DrawTitle(string title, string type)
         {
             Console.WriteLine(title);
-            DrawSeparator(title.Length);
+
+            if (type == "program")
+            {
+                DrawHR(title.Length, '=');
+            }
+            else if (type =="section")
+            {
+                DrawHR(title.Length, '-');
+            }
         }
-        public static void DrawSeparator(int stringLength)
+
+        public static void DrawHR(int stringLength, char type)
         {
-            string separator = new string('-', stringLength);
-            Console.WriteLine($"{separator}");
+            string hr = new string(type, stringLength);
+            Console.WriteLine($"{hr}\n");
         }
     }
 }
