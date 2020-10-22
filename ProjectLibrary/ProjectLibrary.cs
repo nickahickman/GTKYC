@@ -31,18 +31,7 @@ namespace ProjectLibrary
                     userQuery = MyLibs.UserInputLibrary.GetUserResponse($"I can only tell you about {GetStudentName(students, targetStudent)}'s favorite food, hometown, or favorite animal. Which would you like to know?");
                 }
 
-                if (userQuery == "favorite food")
-                {
-                    Console.WriteLine($"{GetStudentName(students, targetStudent)}'s favorite food is {GetStudentFact(students, targetStudent, "favorite food")}");
-                }
-                else if (userQuery == "hometown")
-                {
-                    Console.WriteLine($"{GetStudentName(students, targetStudent)}'s hometown is {GetStudentFact(students, targetStudent, "hometown")}");
-                }
-                else
-                {
-                    Console.WriteLine($"{GetStudentName(students, targetStudent)}'s favorite animal is {GetStudentFact(students, targetStudent, "favorite animal")}");
-                }
+                Console.WriteLine(GetStudentFact(students, targetStudent, userQuery));
                 
                 if (!MyLibs.UserInputLibrary.UserWantsToContinue("Would you like information on another student?", "I didn't understand that."))
                 {
@@ -62,7 +51,7 @@ namespace ProjectLibrary
 
             for (int i = 0; i < rosterSize; i++)
             {
-                Console.WriteLine($"{students[i, 0]} - Student ID: {i}");
+                Console.WriteLine($"ID: {i} - {GetStudentName(students, i)}");
             }
             Console.WriteLine("");
         }
@@ -76,15 +65,15 @@ namespace ProjectLibrary
         {
             if (query == "favorite food")
             {
-                return students[index, 1];
+                return $"{GetStudentName(students, index)}'s favorite food is {students[index, 1]}";
             }
             else if (query == "hometown")
             {
-                return students[index, 2];
+                return $"{GetStudentName(students, index)}'s hometown is {students[index, 2]}";
             }
             else
             {
-                return students[index, 3];
+                return $"{GetStudentName(students, index)}'s favorite animal is {students[index, 3]}";
             }
         }
 
