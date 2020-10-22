@@ -1,0 +1,9 @@
+C:\Users\HoboPrime\Desktop\grandCircus\unit2\RegexRedux\MyLibs\bin\Debug\netstandard2.0\MyLibs.deps.json
+C:\Users\HoboPrime\Desktop\grandCircus\unit2\RegexRedux\MyLibs\bin\Debug\netstandard2.0\MyLibs.dll
+C:\Users\HoboPrime\Desktop\grandCircus\unit2\RegexRedux\MyLibs\bin\Debug\netstandard2.0\MyLibs.pdb
+C:\Users\HoboPrime\Desktop\grandCircus\unit2\RegexRedux\MyLibs\obj\Debug\netstandard2.0\MyLibs.csprojAssemblyReference.cache
+C:\Users\HoboPrime\Desktop\grandCircus\unit2\RegexRedux\MyLibs\obj\Debug\netstandard2.0\MyLibs.AssemblyInfoInputs.cache
+C:\Users\HoboPrime\Desktop\grandCircus\unit2\RegexRedux\MyLibs\obj\Debug\netstandard2.0\MyLibs.AssemblyInfo.cs
+C:\Users\HoboPrime\Desktop\grandCircus\unit2\RegexRedux\MyLibs\obj\Debug\netstandard2.0\MyLibs.csproj.CoreCompileInputs.cache
+C:\Users\HoboPrime\Desktop\grandCircus\unit2\RegexRedux\MyLibs\obj\Debug\netstandard2.0\MyLibs.dll
+C:\Users\HoboPrime\Desktop\grandCircus\unit2\RegexRedux\MyLibs\obj\Debug\netstandard2.0\MyLibs.pdb

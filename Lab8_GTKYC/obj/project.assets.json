@@ -30,8 +30,8 @@
   "libraries": {
     "MyLibs/1.0.0": {
       "type": "project",
-      "path": "../../RegexRedux/MyLibs/MyLibs.csproj",
-      "msbuildProject": "../../RegexRedux/MyLibs/MyLibs.csproj"
+      "path": "../MyLibs/MyLibs.csproj",
+      "msbuildProject": "../MyLibs/MyLibs.csproj"
     },
     "ProjectLibrary/1.0.0": {
       "type": "project",

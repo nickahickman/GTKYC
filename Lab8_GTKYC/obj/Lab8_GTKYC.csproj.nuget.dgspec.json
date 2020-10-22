@@ -60,14 +60,14 @@
         }
       }
     },
-    "C:\\Users\\HoboPrime\\Desktop\\grandCircus\\unit2\\Lab8_GTKYC\\ProjectLibrary\\ProjectLibrary.csproj": {
+    "C:\\Users\\HoboPrime\\Desktop\\grandCircus\\unit2\\Lab8_GTKYC\\MyLibs\\MyLibs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HoboPrime\\Desktop\\grandCircus\\unit2\\Lab8_GTKYC\\ProjectLibrary\\ProjectLibrary.csproj",
-        "projectName": "ProjectLibrary",
-        "projectPath": "C:\\Users\\HoboPrime\\Desktop\\grandCircus\\unit2\\Lab8_GTKYC\\ProjectLibrary\\ProjectLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\HoboPrime\\Desktop\\grandCircus\\unit2\\Lab8_GTKYC\\MyLibs\\MyLibs.csproj",
+        "projectName": "MyLibs",
+        "projectPath": "C:\\Users\\HoboPrime\\Desktop\\grandCircus\\unit2\\Lab8_GTKYC\\MyLibs\\MyLibs.csproj",
         "packagesPath": "C:\\Users\\HoboPrime\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HoboPrime\\Desktop\\grandCircus\\unit2\\Lab8_GTKYC\\ProjectLibrary\\obj\\",
+        "outputPath": "C:\\Users\\HoboPrime\\Desktop\\grandCircus\\unit2\\Lab8_GTKYC\\MyLibs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HoboPrime\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -82,11 +82,7 @@
         },
         "frameworks": {
           "netstandard2.0": {
-            "projectReferences": {
-              "C:\\Users\\HoboPrime\\Desktop\\grandCircus\\unit2\\RegexRedux\\MyLibs\\MyLibs.csproj": {
-                "projectPath": "C:\\Users\\HoboPrime\\Desktop\\grandCircus\\unit2\\RegexRedux\\MyLibs\\MyLibs.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -119,14 +115,14 @@
         }
       }
     },
-    "C:\\Users\\HoboPrime\\Desktop\\grandCircus\\unit2\\RegexRedux\\MyLibs\\MyLibs.csproj": {
+    "C:\\Users\\HoboPrime\\Desktop\\grandCircus\\unit2\\Lab8_GTKYC\\ProjectLibrary\\ProjectLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HoboPrime\\Desktop\\grandCircus\\unit2\\RegexRedux\\MyLibs\\MyLibs.csproj",
-        "projectName": "MyLibs",
-        "projectPath": "C:\\Users\\HoboPrime\\Desktop\\grandCircus\\unit2\\RegexRedux\\MyLibs\\MyLibs.csproj",
+        "projectUniqueName": "C:\\Users\\HoboPrime\\Desktop\\grandCircus\\unit2\\Lab8_GTKYC\\ProjectLibrary\\ProjectLibrary.csproj",
+        "projectName": "ProjectLibrary",
+        "projectPath": "C:\\Users\\HoboPrime\\Desktop\\grandCircus\\unit2\\Lab8_GTKYC\\ProjectLibrary\\ProjectLibrary.csproj",
         "packagesPath": "C:\\Users\\HoboPrime\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HoboPrime\\Desktop\\grandCircus\\unit2\\RegexRedux\\MyLibs\\obj\\",
+        "outputPath": "C:\\Users\\HoboPrime\\Desktop\\grandCircus\\unit2\\Lab8_GTKYC\\ProjectLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HoboPrime\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -141,7 +137,11 @@
         },
         "frameworks": {
           "netstandard2.0": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\HoboPrime\\Desktop\\grandCircus\\unit2\\Lab8_GTKYC\\MyLibs\\MyLibs.csproj": {
+                "projectPath": "C:\\Users\\HoboPrime\\Desktop\\grandCircus\\unit2\\Lab8_GTKYC\\MyLibs\\MyLibs.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

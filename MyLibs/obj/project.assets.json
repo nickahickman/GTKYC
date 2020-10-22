@@ -25,16 +25,6 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
-      },
-      "MyLibs/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "compile": {
-          "bin/placeholder/MyLibs.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MyLibs.dll": {}
-        }
       }
     }
   },
@@ -182,16 +172,10 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
-    },
-    "MyLibs/1.0.0": {
-      "type": "project",
-      "path": "../MyLibs/MyLibs.csproj",
-      "msbuildProject": "../MyLibs/MyLibs.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "MyLibs >= 1.0.0",
       "NETStandard.Library >= 2.0.3"
     ]
   },
@@ -201,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HoboPrime\\Desktop\\grandCircus\\unit2\\Lab8_GTKYC\\ProjectLibrary\\ProjectLibrary.csproj",
-      "projectName": "ProjectLibrary",
-      "projectPath": "C:\\Users\\HoboPrime\\Desktop\\grandCircus\\unit2\\Lab8_GTKYC\\ProjectLibrary\\ProjectLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\HoboPrime\\Desktop\\grandCircus\\unit2\\Lab8_GTKYC\\MyLibs\\MyLibs.csproj",
+      "projectName": "MyLibs",
+      "projectPath": "C:\\Users\\HoboPrime\\Desktop\\grandCircus\\unit2\\Lab8_GTKYC\\MyLibs\\MyLibs.csproj",
       "packagesPath": "C:\\Users\\HoboPrime\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HoboPrime\\Desktop\\grandCircus\\unit2\\Lab8_GTKYC\\ProjectLibrary\\obj\\",
+      "outputPath": "C:\\Users\\HoboPrime\\Desktop\\grandCircus\\unit2\\Lab8_GTKYC\\MyLibs\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HoboPrime\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -220,11 +204,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {
-            "C:\\Users\\HoboPrime\\Desktop\\grandCircus\\unit2\\Lab8_GTKYC\\MyLibs\\MyLibs.csproj": {
-              "projectPath": "C:\\Users\\HoboPrime\\Desktop\\grandCircus\\unit2\\Lab8_GTKYC\\MyLibs\\MyLibs.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
